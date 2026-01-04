@@ -9,8 +9,6 @@ Hands-on Microsoft Sentinel project monitoring Azure Entra ID sign-ins and audit
 1. [Project Overview](#project-overview)  
 2. [Prerequisites](#prerequisites)  
 3. [Project Phases](#project-phases)  
-4. [Screenshots](#screenshots)  
-5. [KQL Queries](#kql-queries)   
 
 ---
 
@@ -42,8 +40,7 @@ The project is designed to demonstrate **practical SIEM skills** suitable for re
 - Created Microsoft Sentinel workspace in **US East**  
 - Verified workspace creation with no errors  
 
-**Screenshot:**  
-`screenshots/01-workspace-created.png`  
+![Workspace Created](Screenshots/01-workspace-created.png)  
 
 ---
 
@@ -51,8 +48,7 @@ The project is designed to demonstrate **practical SIEM skills** suitable for re
 - Connected **Sign-in logs** and **Audit logs** from Azure Entra ID  
 - Verified logs ingestion into Sentinel  
 
-**Screenshot:**  
-`screenshots/02-entra-id-logs-connected.png`  
+![Entra ID Logs Connected](Screenshots/02-entra-id-logs-connected.png)  
 
 ---
 
@@ -60,8 +56,7 @@ The project is designed to demonstrate **practical SIEM skills** suitable for re
 - Ran sample queries to confirm log data was available in Sentinel  
 - Connected successfully, logs visible for analytics  
 
-**Screenshot:**  
-`screenshots/05-signin-activity-detected.png`  
+![Log Ingestion Verified](Screenshots/03-log-ingestion-verified.png)  
 
 ---
 
@@ -90,8 +85,7 @@ SigninLogs
   - Incident correlation = Tenant default  
 - Generated alerts automatically create incidents  
 
-**Screenshot:**  
-`screenshots/06-custom-analytics-rule.png`  
+![Custom Analytics Rule](Screenshots/04-custom-analytics-rule.png)  
 
 **Query Example (KQL):**
 ```kql
@@ -109,11 +103,18 @@ SigninLogs
   - Reviewed entities and alert timeline  
   - Used investigation graph to understand activity  
 - Closed incident as **Benign Positive** with proper documentation  
+  
+#### Incident created: 
 
-**Screenshots:**  
-- Incident created: `screenshots/07-incident-created.png`  
-- Incident investigation: `screenshots/08-incident-investigation.png`  
-- Incident closed: `screenshots/09-incident-closed.png`  
+![Incident Created](Screenshots/05-incident-created.png)  
+
+#### Incident investigation:  
+
+![Incident Investigation](Screenshots/06-incident-investigation.png)  
+
+#### Incident closed: 
+
+![Incident Closed](Screenshots/07-incident-closed.png)  
 
 ---
 
@@ -122,8 +123,7 @@ SigninLogs
 - Automatically generated chart showing event counts by table (`AuditLogs`, `SigninLogs`, etc.)  
 - Provides SOC visibility for security monitoring and reporting  
 
-**Screenshot:**  
-`screenshots/10-workbook-dashboard.png`  
+![Workbook Dashboard](Screenshots/08-workbook-dashboard.png)  
 
 **Example Chart KQL (auto-generated):**
 ```kql
