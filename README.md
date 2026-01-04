@@ -10,8 +10,7 @@ Hands-on Microsoft Sentinel project monitoring Azure Entra ID sign-ins and audit
 2. [Prerequisites](#prerequisites)  
 3. [Project Phases](#project-phases)  
 4. [Screenshots](#screenshots)  
-5. [KQL Queries](#kql-queries)  
-6. [License](#license)  
+5. [KQL Queries](#kql-queries)   
 
 ---
 
