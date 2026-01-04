@@ -132,3 +132,8 @@ union withsource=_TableName *
 | summarize Count=count() by _TableName
 | render barchart
 ```
+
+---
+
+**Author:** Jaycob White   
+**Date:** January 2026
